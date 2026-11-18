@@ -1,0 +1,84 @@
+aws lambda :
+its used for server less compute or serverless computer.
+for the use case of devloper or q/a team test their code or sdlc life cycle enviorment thats time we use the lambda to decrease the billing
+because ec2 machine 24x7 computer thats will be charge high thats why we jump into lambda.
+
+in aws console --> compute --> lambda --> create fun--> select-->author by scartch-->give name--> which runtime platform use panrom need to select like java with version-->then  we add a  what ever need rule and instruction like arm arechitecture--> custom execution its like rule to depoly like --> and add code sigiing off its a once the devoloper deployed the code the file cannot unzip once depolyed always deployed
+because some changes happen total production will be affected that's why .
+--> craete a function.
+once the fun is created--> add trigger to code form s3 or several services in inbuilt aws based on scenerio --> affter that add destination to after the run or compile the code to send a notifiction on sucess or on failure via sns notifiction.
+this the lambda func.
+lambda is only costing bill for useable time only.
+
+in 	later we need to deploy via auto trigger using s3 and add designation.    
+sns notification ;
+
+
+
+
+
+s3- simple storage service     
+s3 advantage:
+s3 we can use as repositries
+we can host static website in s3   
+s3 same as google drive we can store and retrive the data
+we can write a lifecycle for object and folder we creating s3
+ex: we can craete a automatically delte unused file for long days (how means we can write parameter or code like) 
+ S3 LAH store any kind of data
+datawarehouse used for analtical data purpose (like sense data)
+s3 is data storage.
+
+major usecase of realtime in s3:
+1.object is files and bucket is folder we call in s3  
+2.unlimited we can store the data
+3.access when ever we want.highly scable and availbity
+4.s3 this also have a security setup as iam user& group.
+ 5. we can use s3 as backup platform (need to backup server or static website).
+6.we can access via CLI AND CONSOLE.
+7. ONLY host a static website in s3
+8.s3 is a global service in aws (we can use or access the this service globally) "iam s3 route53 cloud front".  
+9.yes we can as version control tool via enabling
+
+deploy the s3:
+services -->last we can  see s3 --> select
+	1.craete bucket--> choose general purpose--->unique bucket name be to assign.
+	2.bucket setting for created bucktes
+	3.acl - access control list  
+		disable --> only owner can access		enable --> who going to acces bucket owner or obejct wriiter. select --> bucket owner.
+	4.    configure the setting after create a bucket.
+5.go to inside the bucket and upload a file.
+6.upload it.     
+
+7.properties lah last lah s3 staic webhosting enale it.
+8.storage class in s3 task:(gothrough).
+
+9.metrics --> storage class analasis-->  create analasiys for log excel file generate pannum 
+10 goto mamangement --> life cycle rule --> craete it(lifecycle configuration means what task).
+11.how replica rule work in s3.
+12.                   	
+
+
+
+
+
+
+Route 53 :
+domain naming service for your application
+dns port no : 53
+dns providers: hostinger ,go dadddy, freenon etc.
+dns client pay pannah solitu admin access vangikanum
+its a one of global services.
+1.dns how its works?
+dns ---> dns management--> craete hosted zone
+1.1 . domain name--> descrbtion-->public hostomh
+1.2.addtag lah namah domain attach or slect pannu  
+1.3 ns-naming services
+1.4 crete a record--> record name
+1.5 subdomain we don't need a now but real time they provided we should add it
+1.6(what are the record types aws?)
+1.7 we using record type A & ec2 instance ip address podnum or server ip address
+1.8 ttl--> time to live how much of time its wll live
+1.9(what are routing policy in route 53?)
+1.10 we using  simple routing -- menas we have smaller num of server
+1.11 
+
